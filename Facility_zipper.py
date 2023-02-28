@@ -16,7 +16,8 @@ df['Legal'] = df['Legal']
 df['Facility'] = df['Facility']
 
 date = date.today()
-folder_month = date.today().month
+# Reporting for previous month
+folder_month = date.today().month-1
 folder_year = date.today().year
 
 xlwings.App.display_alerts = False
