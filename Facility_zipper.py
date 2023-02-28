@@ -4,7 +4,6 @@ import os
 from datetime import date
 import csv
 import pandas as pd
-import xlwings
 import xlwings as xw
 
 # Paths for where the reports will be saved and the csv which maps facility names to legal names
@@ -24,6 +23,7 @@ xlwings.App.display_alerts = False
 xw.Interactive = False
 xw.Visible = False
 
+# Make subfolder for each month
 try:
     os.mkdirs(fr"P:\PACS\Finance\Month End Close\All - Month End Reporting\Workday_AP_Aging\{folder_month} - {folder_year}")
 except:
